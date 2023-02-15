@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dsa_project.css">
+    <title>DSA_Helper</title>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCafCKIIIm89WzvLoKOdaHMMRwjM_pMSf4",
+          authDomain: "dsaresources-63f9c.firebaseapp.com",
+          projectId: "dsaresources-63f9c",
+          storageBucket: "dsaresources-63f9c.appspot.com",
+          messagingSenderId: "899223752796",
+          appId: "1:899223752796:web:79669131842582a2019699",
+          measurementId: "G-SGN36TJWRT"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+ </head>
+ <body>
+    <center><h1>Content for Data Structure and Algorithm </h1></center>
+    <main>
+        <center>
+        <img src="Dsa_Image.jpg" alt="Picture of DSA" height="150"/>
+        </center>
+        <br>
+        <!-- <h2>Introduction:</h2> -->
+        <h3 id="heading"></h3>
+        <br>
+            <h3>Filter the Difficulity level & Topic:</h3>
+            <center><input type="text" id="input" onkeyup="searchlevel()" placeholder="Difficulity Level"></input>
+            <input type="text" id="input2" onkeyup="searchtopic()" placeholder="Topic"> </input> </center>
+            <div>
+                <ul id="Topics">
+                    <li >Beginners
+                        <ol>
+                            <li>Basic Of any Language 
+                                <a href="https://www.geeksforgeeks.org/cpp-basics/" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a> 
+                                <a href="https://www.geeksforgeeks.org/java-programming-basics/" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://www.hackerrank.com/domains/cpp?badge_type=cpp" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                        <a href="https://www.hackerrank.com/domains/java?badge_type=java" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of java" height="25"/></a></li>
+                                </ul>
+                            </li>
+                            <li>Array
+                                <a href="https://www.geeksforgeeks.org/arrays-in-c-cpp/" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://www.geeksforgeeks.org/arrays-in-java/" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://practice.geeksforgeeks.org/explore?page=1&category[]=Arrays&difficulty[]=-2&difficulty[]=-1&sortBy=submissions&utm_source=gfg&utm_medium=gfg_header&utm_campaign=gfgpractice_header" target="_main"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397183499/7470ddcd897a9518e173409327547d98.png" alt="GFG" height="45"/></a>
+                                        
+                                </ul>
+                            </li>
+                            <li>Function
+                                <a href="https://cplusplus.com/doc/tutorial/functions/#:~:text=In%20C%2B%2B%2C%20a%20function%20is%20a%20group%20of,identifier%20by%20which%20the%20function%20can%20be%20called." target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://www.w3schools.com/java/java_methods.asp" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Quiz<a href="https://quizorbit.com/quiz-on-functions-in-cpp/" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                        <a href="https://www.geeksforgeeks.org/java-gq/functions-2-gq/" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of java" height="25"/></a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Intermeddiate
+                        <ol>
+                            <li>Searching and Sorting
+                                <a href="https://www.geeksforgeeks.org/difference-between-searching-and-sorting-algorithms/" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://www.geeksforgeeks.org/difference-between-searching-and-sorting-algorithms/" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions for Searching<a href="https://practice.geeksforgeeks.org/explore?page=1&category[]=Arrays&category[]=Searching&difficulty[]=-2&difficulty[]=-1&sortBy=submissions&utm_source=gfg&utm_medium=gfg_header&utm_campaign=gfgpractice_header" target="_main"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397183499/7470ddcd897a9518e173409327547d98.png" alt="Picture of GFG" height="45"/></a>
+                                        <li>Practice Questions for Sorting<a href="https://practice.geeksforgeeks.org/explore?page=1&category[]=Sorting&difficulty[]=-2&difficulty[]=-1&sortBy=submissions&utm_source=gfg&utm_medium=gfg_header&utm_campaign=gfgpractice_header" target="_main"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397183499/7470ddcd897a9518e173409327547d98.png" alt="Picture of GFG" height="45"/></a>   
+                                </ul>
+                            </li>
+                            <li>String
+                                <a href="https://www.geeksforgeeks.org/stdstring-class-in-c/" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://www.javatpoint.com/java-string" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions for Searching<a href="https://practice.geeksforgeeks.org/explore?page=1&category[]=Strings&sortBy=submissions&utm_source=gfg&utm_medium=gfg_header&utm_campaign=gfgpractice_header" target="_main"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397183499/7470ddcd897a9518e173409327547d98.png" alt="Picture of GFG" height="45"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Recursion
+                                <a href="https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://practice.geeksforgeeks.org/explore?page=1&category[]=Recursion&sortBy=submissions&utm_source=gfg&utm_medium=gfg_header&utm_campaign=gfgpractice_header" target="_main"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397183499/7470ddcd897a9518e173409327547d98.png" alt="Picture of GFG" height="45"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Bit Manipulation
+                                <a href="https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/tutorial/" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/tutorial/" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://practice.geeksforgeeks.org/explore?page=3&category[]=Bit%20Magic&sortBy=submissions&utm_source=gfg&utm_medium=gfg_header&utm_campaign=gfgpractice_header" target="_main"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397183499/7470ddcd897a9518e173409327547d98.png" alt="Picture of GFG" height="45"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Stack and Queue
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://practice.geeksforgeeks.org/explore?page=1&category[]=Stack&category[]=Queue&sortBy=submissions&utm_source=gfg&utm_medium=gfg_header&utm_campaign=gfgpractice_header"target="_main"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397183499/7470ddcd897a9518e173409327547d98.png" alt="Picture of GFG" height="45"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Linkedlist
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://practice.geeksforgeeks.org/explore?page=1&category[]=Linked%20List&category[]=doubly-linked-list&category[]=circular%20linked%20list&sortBy=submissions&utm_source=gfg&utm_medium=gfg_header&utm_campaign=gfgpractice_header"target="_main"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397183499/7470ddcd897a9518e173409327547d98.png" alt="Picture of GFG" height="45"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Two Pointer 
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0rBT8io74a95xT-hDFZonNs" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0rBT8io74a95xT-hDFZonNs" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://practice.geeksforgeeks.org/explore?page=1&category[]=two-pointer-algorithm&sortBy=submissions&utm_source=gfg&utm_medium=gfg_header&utm_campaign=gfgpractice_header"target="_main"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397183499/7470ddcd897a9518e173409327547d98.png" alt="Picture of GFG" height="45"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Sliding Window
+                                <a href="https://youtube.com/playlist?list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://youtube.com/playlist?list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://practice.geeksforgeeks.org/explore?page=1&category[]=sliding-window&sortBy=submissions&utm_source=gfg&utm_medium=gfg_header&utm_campaign=gfgpractice_header"target="_main"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397183499/7470ddcd897a9518e173409327547d98.png" alt="Picture of GFG" height="45"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Greddy Algorithm
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://practice.geeksforgeeks.org/explore?page=1&category[]=Greedy&sortBy=submissions&utm_source=gfg&utm_medium=gfg_header&utm_campaign=gfgpractice_header"target="_main"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1397183499/7470ddcd897a9518e173409327547d98.png" alt="Picture of GFG" height="45"/></a></li>  
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Advance
+                        <ol>
+                            <li>Binary Search
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0qYbL4TBaEWgb-ljVdhkM7R" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0qYbL4TBaEWgb-ljVdhkM7R" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://leetcode.com/problemset/all/?topicSlugs=binary-search&page=1&sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D"target="_main"><img src="https://1.bp.blogspot.com/-TAidrR7Zpos/X8I67LktxeI/AAAAAAAAJ2s/Ci1oJghZ2ngD3_Oq5Gizeb6dPJfhycV1wCLcBGAsYHQ/w320-h320/LeetCode_Codiizone%255B1%255D.jpg" alt="Picture of Leetcode" height="30"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Advance Recursion and Backtracking
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://leetcode.com/problemset/all/?topicSlugs=backtracking&page=1&sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D"target="_main"><img src="https://1.bp.blogspot.com/-TAidrR7Zpos/X8I67LktxeI/AAAAAAAAJ2s/Ci1oJghZ2ngD3_Oq5Gizeb6dPJfhycV1wCLcBGAsYHQ/w320-h320/LeetCode_Codiizone%255B1%255D.jpg" alt="Picture of Leetcode" height="30"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Heap
+                                <a href="https://www.geeksforgeeks.org/heap-data-structure/" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://www.geeksforgeeks.org/heap-data-structure/" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://leetcode.com/problemset/all/?topicSlugs=heap-priority-queue&page=1&sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D"target="_main"><img src="https://1.bp.blogspot.com/-TAidrR7Zpos/X8I67LktxeI/AAAAAAAAJ2s/Ci1oJghZ2ngD3_Oq5Gizeb6dPJfhycV1wCLcBGAsYHQ/w320-h320/LeetCode_Codiizone%255B1%255D.jpg" alt="Picture of Leetcode" height="30"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Binary Tree and Binary Search Tree
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://leetcode.com/problemset/all/?topicSlugs=binary-tree%2Cbinary-search-tree&page=1&sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D"target="_main"><img src="https://1.bp.blogspot.com/-TAidrR7Zpos/X8I67LktxeI/AAAAAAAAJ2s/Ci1oJghZ2ngD3_Oq5Gizeb6dPJfhycV1wCLcBGAsYHQ/w320-h320/LeetCode_Codiizone%255B1%255D.jpg" alt="Picture of Leetcode" height="30"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Graph
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://leetcode.com/problemset/all/?topicSlugs=graph&page=2&sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D"target="_main"><img src="https://1.bp.blogspot.com/-TAidrR7Zpos/X8I67LktxeI/AAAAAAAAJ2s/Ci1oJghZ2ngD3_Oq5Gizeb6dPJfhycV1wCLcBGAsYHQ/w320-h320/LeetCode_Codiizone%255B1%255D.jpg" alt="Picture of Leetcode" height="30"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Dynamic Programming
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://leetcode.com/problemset/all/?page=1&sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D&topicSlugs=dynamic-programming"target="_main"><img src="https://1.bp.blogspot.com/-TAidrR7Zpos/X8I67LktxeI/AAAAAAAAJ2s/Ci1oJghZ2ngD3_Oq5Gizeb6dPJfhycV1wCLcBGAsYHQ/w320-h320/LeetCode_Codiizone%255B1%255D.jpg" alt="Picture of Leetcode" height="30"/></a></li>  
+                                </ul>
+                            </li>
+                            <li>Trie
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp" target="_main"><img src="https://th.bing.com/th/id/OIP.5qCc8c_n-UTYa0w07mjsawHaIi?pid=ImgDet&rs=1" alt="Picture of C++" height="25"/></a>
+                                <a href="https://youtube.com/playlist?list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp" target="_main"><img src="https://th.bing.com/th/id/R.f88e5cc2da7fc161c6bb58a53f7c5e1e?rik=CzZBDCZGakGhbg&riu=http%3a%2f%2fstatic1.businessinsider.com%2fimage%2f5858326eca7f0ccb018b690c-800%2fjavalogo-2.jpg&ehk=oLG84Jcn2Lnx1h%2bvs1YsfDd0WMGPOKo9GfRQEWJaAso%3d&risl=&pid=ImgRaw&r=0" alt="Picture of Java" height="25"/></a><br>
+                                <ul>
+                                    <li>Practice Questions<a href="https://leetcode.com/problemset/all/?page=1&sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D&topicSlugs=trie"target="_main"><img src="https://1.bp.blogspot.com/-TAidrR7Zpos/X8I67LktxeI/AAAAAAAAJ2s/Ci1oJghZ2ngD3_Oq5Gizeb6dPJfhycV1wCLcBGAsYHQ/w320-h320/LeetCode_Codiizone%255B1%255D.jpg" alt="Picture of Leetcode" height="30"/></a></li>  
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        <center><h3><i>Thank You,Keep Learning!!</i></h3></center>
+    </main>
+ </body>
+<script src="Dsa_project.js"></script>
+ 
+ </html>
+ 
